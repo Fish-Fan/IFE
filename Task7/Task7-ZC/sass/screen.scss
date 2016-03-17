@@ -7,12 +7,60 @@
 $a-spacing:3px;
 @import "../images/icon/*.png";
 @include all-icon-sprites;
+
+$red:#E74F4D;
+$font-color:#787b83;
 a{
-  width: 100px;
+  text-decoration: none;
 }
-span{
-  color: antiquewhite;
-  a{
-    height: 10px;
+ul{
+  list-style: none;
+}
+a,span,p{
+  color: $font-color;
+  font-family:"Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+.pull-left{
+  float: left;
+}
+.pull-right{
+  float: right;
+}
+h2{
+  font-size: 21px;
+}
+header{
+  height: 60px;
+  line-height: 60px;
+  padding: 0 60px;
+  border-bottom: solid 1px #ddd;
+  .logo{
+    img{
+      width: 30px;
+      vertical-align: sub;
+    }
+    span{
+      color: black;
+      font-size: 20px;
+      margin-left: 10px;
+    }
   }
+  nav{
+    font-size: 0;
+    a{
+      font-size: 14px;
+      padding: 0 10px;
+      margin: 0 10px;
+      display: inline-block;
+    }
+    a:hover{
+      line-height: inherit;
+      color: $red;
+      border-bottom: solid 3px $red;
+    }
+  }
+}
+.begin{
+  min-width: 980px;
+  height: 690px;
 }

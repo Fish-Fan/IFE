@@ -113,16 +113,75 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-position: 0 -237px;
 }
 
-/* line 10, ../sass/screen.scss */
+/* line 13, ../sass/screen.scss */
 a {
-  width: 100px;
+  text-decoration: none;
 }
 
-/* line 13, ../sass/screen.scss */
-span {
-  color: antiquewhite;
+/* line 16, ../sass/screen.scss */
+ul {
+  list-style: none;
 }
-/* line 15, ../sass/screen.scss */
-span a {
-  height: 10px;
+
+/* line 19, ../sass/screen.scss */
+a, span, p {
+  color: #787b83;
+  font-family: "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+
+/* line 23, ../sass/screen.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 26, ../sass/screen.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 29, ../sass/screen.scss */
+h2 {
+  font-size: 21px;
+}
+
+/* line 32, ../sass/screen.scss */
+header {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 60px;
+  border-bottom: solid 1px #ddd;
+}
+/* line 38, ../sass/screen.scss */
+header .logo img {
+  width: 30px;
+  vertical-align: sub;
+}
+/* line 42, ../sass/screen.scss */
+header .logo span {
+  color: black;
+  font-size: 20px;
+  margin-left: 10px;
+}
+/* line 48, ../sass/screen.scss */
+header nav {
+  font-size: 0;
+}
+/* line 50, ../sass/screen.scss */
+header nav a {
+  font-size: 14px;
+  padding: 0 10px;
+  margin: 0 10px;
+  display: inline-block;
+}
+/* line 56, ../sass/screen.scss */
+header nav a:hover {
+  line-height: inherit;
+  color: #E74F4D;
+  border-bottom: solid 3px #E74F4D;
+}
+
+/* line 63, ../sass/screen.scss */
+.begin {
+  min-width: 980px;
+  height: 690px;
 }
